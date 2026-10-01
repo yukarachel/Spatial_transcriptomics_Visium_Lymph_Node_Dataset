@@ -1,0 +1,10 @@
+name: element-prep
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - squidpy
+  - scanpy
+  - leidenalg
+  - python-igraph
+  - jupyter
