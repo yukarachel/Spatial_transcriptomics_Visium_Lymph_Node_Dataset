@@ -27,8 +27,11 @@ Spatial transcriptomics allows us to understand RNA expression from cells in tis
 - Does not include cell-type deconvolution (Tangram) or label transfer from the PBMC reference — noted as a future direction
 
 ## Figures
+After Leiden clustering, I used UMAP to visualize all 9 clusters in 2D. 
 ![alt text](image.png)
 
+Based on known marker genes for T-cells, B-cells, and macrophages, I created a spatial plot showing the expression of CD3E, CD19, and CD68 on the tissue. This does correlate to the leiden clustering above. 
 ![alt text](image-2.png)
 
+I looked into other genes that could uncover spatial data using Moran I. These genes are most informative in showing spatial context. 
 ![alt text](image-1.png)
