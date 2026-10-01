@@ -20,7 +20,7 @@ Spatial transcriptomics allows us to understand RNA expression from cells in tis
 ## Spatial findings
 - Clusters form spatially coherent oval regions on tissue, not random speckling — suggests clusters correspond to real anatomical structures (e.g. germinal centers, T-cell zones)
 - Marker genes (CD3E, CD19, CD68) show spatial enrichment aligned with cluster boundaries
-- Moran's I spatial autocorrelation identified [top genes] as spatially variable — [overlap or not] with cluster-defining marker genes
+- Moran's I spatial autocorrelation identified IGKC, IGHG4, IGHG1, CCL21, FDCSP, MT-CO1, IGHG2, MT-CO3 as spatially variable, which overlaps with cluster-defining marker genes
 
 ## What this is / isn't
 - Real QC/clustering/analysis on public data
@@ -33,5 +33,5 @@ After Leiden clustering, I used UMAP to visualize all 9 clusters in 2D.
 Based on known marker genes for T-cells, B-cells, and macrophages, I created a spatial plot showing the expression of CD3E, CD19, and CD68 on the tissue. This does correlate to the leiden clustering above. 
 ![alt text](image-2.png)
 
-I looked into other genes that could uncover spatial data using Moran I. These genes are most informative in showing spatial context. 
+I looked into other genes that could uncover spatial data using Moran's I. These genes are most informative in showing spatial context. 
 ![alt text](image-1.png)
